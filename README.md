@@ -1,6 +1,4 @@
-This project demonstrates a **financial time series analysis** using Python. 
 
-Here’s a polished **README draft** for your GitHub repo based on the contents of your uploaded file:
 
 ---
 
