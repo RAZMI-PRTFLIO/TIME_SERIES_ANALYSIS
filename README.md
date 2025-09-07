@@ -76,5 +76,3 @@ This repo can serve as a foundation for:
 * Exploring seasonality in retail/sales data
 
 ---
-
-👉 Would you like me to also include **ready-to-run Colab badge + notebook links** in the README so users can launch it directly without setup?
