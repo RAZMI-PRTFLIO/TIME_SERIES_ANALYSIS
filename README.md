@@ -15,10 +15,10 @@ This repository contains a Jupyter Notebook for performing **time series analysi
 🛠️ Technologies Used
 
 Python 3.x**
-Pandas** – data manipulation
-Matplotlib** – static visualization
-Plotly** – interactive visualization
-Statsmodels** – time series decomposition & statistical analysis
+*Pandas** – data manipulation
+*Matplotlib** – static visualization
+*Plotly** – interactive visualization
+*Statsmodels** – time series decomposition & statistical analysis
 
 📂 Project Structure
 
