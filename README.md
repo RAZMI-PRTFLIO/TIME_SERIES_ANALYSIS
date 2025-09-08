@@ -1,78 +1,59 @@
-
-
----
-
 # 📈 Simple Time Series Analysis
 
-This repository contains a beginner-friendly introduction to **time series analysis** using Python. The notebook demonstrates data exploration, transformation, visualization, and seasonal decomposition techniques on real-world datasets such as **Bitcoin daily prices** and **monthly chocolate revenue**.
+This repository contains a Jupyter Notebook for performing **time series analysis** on Bitcoin historical price data. The project demonstrates essential techniques for exploring, visualizing, and decomposing time series data using Python.
 
-## 🚀 Features
+🚀 Features
 
-* Load and prepare time series data (`pandas`)
-* Resampling to different frequencies (daily, weekly, monthly, yearly)
-* Rolling statistics (7-day and 30-day moving averages)
-* Data cleaning (handling missing values, interpolation, filling methods)
-* Feature engineering (lagged values, time-based features like year, month, weekday, weekend flags)
-* Visualization:
+* Load and preprocess Bitcoin price data from CSV
+* Time series indexing and resampling (daily, weekly, monthly, quarterly, yearly)
+* Exploratory data analysis with summary statistics
+* Data visualization using **Matplotlib** and **Plotly** (interactive charts)
+* Seasonal decomposition (trend, seasonality, residuals)
+* Autocorrelation and Partial Autocorrelation (ACF/PACF) plots
+* Insights into market patterns and anomalies
 
-  * Daily and rolling plots
-  * Volume and price correlation
-  * Monthly and quarterly seasonality plots
-  * Autocorrelation (ACF/PACF) analysis
-* Seasonal decomposition (trend, seasonality, residuals) with `statsmodels`
+🛠️ Technologies Used
 
-## 🗂️ Datasets
+Python 3.x**
+Pandas** – data manipulation
+Matplotlib** – static visualization
+Plotly** – interactive visualization
+Statsmodels** – time series decomposition & statistical analysis
 
-1. **Bitcoin Price Data (`bitcoin_price.csv`)**
+📂 Project Structure
 
-   * Columns: `Date, Open, High, Low, Close, Adj Close, Volume`
-   * Date range: 2014 – 2023
+```
+├── SIMPLE_TIME_SERIES_ANALYSIS.ipynb   # Main Jupyter Notebook
+├── bitcoin_price.csv                   # Dataset (Bitcoin historical prices)
+└── README.md                           # Project documentation
+```
 
-2. **Chocolate Monthly Revenue (`choco_monthly_revenue.csv`)**
+📊 Dataset
 
-   * Columns: `Date, Revenue`
-   * Used for monthly seasonality and decomposition examples.
+The dataset (`bitcoin_price.csv`) contains daily historical price data for Bitcoin, including:
 
-*(Note: Datasets should be placed in the working directory or mounted Google Drive path when running in Google Colab.)*
+* `Date` – trading date
+* `Open` – price at the beginning of the day
+* `High` – highest price of the day
+* `Low` – lowest price of the day
+* `Close` – price at the end of the day
+* `Adj Close` – adjusted closing price
+* `Volume` – total trading volume
 
-## 📚 Libraries Used
 
-* [pandas](https://pandas.pydata.org/) – data manipulation
-* [matplotlib](https://matplotlib.org/) – visualization
-* [statsmodels](https://www.statsmodels.org/) – seasonal plots, decomposition, autocorrelation
+## 📈 Example Visualizations
 
-## ▶️ Usage
-
-1. Clone the repository:
-
-   ```bash
-   git clone https://github.com/your-username/simple-time-series-analysis.git
-   cd simple-time-series-analysis
-   ```
-
-2. Open the notebook in **Google Colab** or **Jupyter Notebook**.
-
-3. Run the analysis step by step to explore:
-
-   * Trends
-   * Seasonality
-   * Rolling averages
-   * Autocorrelation
-
-## 📊 Example Visualizations
-
-* Daily Closing Price of Bitcoin
-* Rolling averages (7-day, 30-day)
-* Yearly trading volume trends
-* Monthly and quarterly seasonal plots
-* Seasonal decomposition into trend, seasonality, and residuals
-
-## 🛠️ Next Steps
-
-This repo can serve as a foundation for:
-
-* Building predictive models (ARIMA, SARIMA, Prophet)
-* Forecasting financial time series
-* Exploring seasonality in retail/sales data
+* Bitcoin closing price trends
+* Seasonal decomposition plots (trend, seasonality, residuals)
+* Autocorrelation (ACF) and Partial Autocorrelation (PACF)
+* Interactive price charts with **Plotly**
 
 ---
+
+## 🔮 Future Improvements
+
+* Add forecasting models (ARIMA, SARIMA, Prophet, etc.)
+* Automate EDA with reusable functions
+* Extend analysis to multiple cryptocurrencies
+
+
